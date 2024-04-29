@@ -1,29 +1,20 @@
 import React from "react";
-import {FilmDetails} from "@/components/FilmDetails";
-
+import { FilmDetails } from "@/components/FilmDetails";
+import { filmsData } from "@/data/filmsData";
 export default function Home() {
-
-    const filmDetails: {
-        title: string;
-        genre: 'comedy' | 'horror';
-        seasonsCount: number;
-    } = {
-        title: "<NAME>",
-        genre: "comedy",
-        seasonsCount: 10,
-    }
 
   return (
       <div>
-          <header></header>
-          <FilmDetails
-              title={filmDetails.title}
-              genre={filmDetails.genre}
-              seasonsCount={filmDetails.seasonsCount}
-          />
-          {/*<Reviews/>*/}
-          {/*<Recommendations/>*/}
-          <footer></footer>
+          {filmsData.map((film) => (
+              <FilmDetails
+                  key={film.id}
+                  id={film.id}
+                  title={film.title}
+                  genre={film.genre}
+                  seasonsCount={film.seasonsCount}
+                  reviews={film.reviews}
+              />
+          ))}
       </div>
   );
 }

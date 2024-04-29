@@ -8,11 +8,3 @@ export const Films = () => {
         </div>
     );
 };
-// export const Films = () => {
-//     return React.createElement("div", {
-//         children : [
-//         React.createElement("span",{children: "one"}),
-//         React.createElement("span", {children: "two"}),
-//     ]})
-// }
-
