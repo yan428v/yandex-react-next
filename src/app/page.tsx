@@ -1,6 +1,8 @@
 import React from "react";
 import { FilmDetails } from "@/components/FilmDetails";
 import { filmsData } from "@/data/filmsData";
+
+
 export default function Home() {
 
   return (

@@ -14,8 +14,7 @@ export const FilmInfo: FC<Film> = ({
 
     const filmRating = useMemo(() => {
         return Math.floor(
-            reviews.reduce((sum, review) => sum + review.rating, 0) / reviews.length
-        );
+            reviews.reduce((sum, review) => sum + review.rating, 0) / reviews.length);
     }, [reviews]);
 
     return (
