@@ -14,7 +14,7 @@ import { Film} from "@/interfaces/film";
                                                           seasonsCount,
                                                           reviews
                                                       }) => {
-//     let { count, increment, decrement } = useCount(0);
+     let { count, increment, decrement } = useCount(0);
 
     return (
         <>
