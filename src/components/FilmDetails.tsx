@@ -7,14 +7,14 @@ import {FilmInfo} from "@/components/FilmInfo/FilmInfo";
 import { Film} from "@/interfaces/film";
 
 
-export const FilmDetails: FunctionComponent<Film> = ({
-                                                         id,
-                                                         title,
-                                                         genre,
-                                                         seasonsCount,
-                                                         reviews
-                                                     }) => {
-    let { count, increment, decrement } = useCount(0);
+// export const FilmDetails: FunctionComponent<Film> = ({
+//                                                          id,
+//                                                          title,
+//                                                          genre,
+//                                                          seasonsCount,
+//                                                          reviews
+//                                                      }) => {
+//     let { count, increment, decrement } = useCount(0);
 
     return (
         <>
